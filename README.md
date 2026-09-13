@@ -1,3 +1,39 @@
+# 🚀 Dev Stack Builder
+
+Dev Stack Builder is a modern and responsive web application where users can explore different technologies and build their own technology stack.
+
+## 🛠️ Technologies Used
+
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- React Toastify
+- JSON
+
+## ✨ Features
+
+- Browse different technologies with details and ratings.
+- Add technologies to your own stack.
+- Prevent duplicate technologies and multiple technologies from the same category.
+- Fully responsive design for mobile, tablet, and desktop.
+- Toast notifications for user actions.
+
+## 📸 Project Preview
+
+![Dev Stack Builder](public/dev-stack.JPG)
+![Dev Stack Builder](public/dev-stack2.JPG)
+![Dev Stack Builder](public/dev-stack3.JPG)
+
+## 🔗 Links
+
+- Live Website: [YOUR_LIVE_LINK](https://dev-stack-lime.vercel.app/)
+- GitHub Repository: https://github.com/tamanna141101/Dev-stack
+
+
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

@@ -21,9 +21,9 @@ Dev Stack Builder is a modern and responsive web application where users can exp
 
 ## 📸 Project Preview
 
-![Dev Stack Builder](public/dev-stack.JPG)
-![Dev Stack Builder](public/dev-stack2.JPG)
-![Dev Stack Builder](public/dev-stack3.JPG)
+![Dev Stack Builder](public/dev_stack.JPG)
+![Dev Stack Builder](public/dev_stack2.JPG)
+![Dev Stack Builder](public/dev_stack3.JPG)
 
 ## 🔗 Links
 

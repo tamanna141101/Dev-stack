@@ -21,24 +21,38 @@ const TechnologySection = () => {
       })
   }, [])
 
-  const handleAdd = (technology: Technology) => {
-    const alreadySelected = selectedTechnologies.some(
-      (item) => item.id === technology.id,
-    )
+ const handleAdd = (technology: Technology) => {
+  {/*Check if the same technology is already selected*/}
+  const alreadySelected = selectedTechnologies.some(
+    (item) => item.id === technology.id,
+  )
 
-    if (alreadySelected) {
-      toast.warning(`${technology.name} is already in your stack!`)
-      return
-    }
-
-    const newStack = [...selectedTechnologies, technology]
-
-    setSelectedTechnologies(newStack)
-
-    toast.success(
-      `${technology.name} added! ${newStack.length} technology selected.`,
-    )
+  if (alreadySelected) {
+    toast.warning(`${technology.name} is already in your stack!`)
+    return
   }
+
+  {/*Check if another technology from the same category is selected*/}
+  const sameCategorySelected = selectedTechnologies.some(
+    (item) => item.category === technology.category,
+  )
+
+  if (sameCategorySelected) {
+    toast.warning(
+      `You already selected a ${technology.category} technology!`,
+    )
+    return
+  }
+
+  {/*Add technology to stack*/}
+  const newStack = [...selectedTechnologies, technology]
+
+  setSelectedTechnologies(newStack)
+
+  toast.success(
+    `${technology.name} added to your stack!`,
+  )
+}
 
   const handleRemove = (id: string) => {
     const technology = selectedTechnologies.find((item) => item.id === id)
